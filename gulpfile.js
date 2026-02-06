@@ -27,6 +27,7 @@ const PATHS_TO_STATIC = [
   `${PATH_TO_SOURCE}*.webmanifest`,
   `${PATH_TO_SOURCE}favicons/**/*.{png,svg}`,
   `${PATH_TO_SOURCE}vendor/**/*`,
+  `${PATH_TO_SOURCE}img/**/*`,
   `${PATH_TO_SOURCE}images/**/*`,
   `!${PATH_TO_SOURCE}**/README.md`,
 ];
