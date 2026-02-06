@@ -6,9 +6,9 @@
     <title>Кэт энерджи</title>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body class="container page-body">
+  <body class="page-body">
     <header class="page-header page-header--index">
-      <div class="page-header__container">
+      <div class="container page-header__container">
         <h1 class="visually-hidden">
           Cat Energy - диетическое питание для кошек
         </h1>
@@ -17,14 +17,22 @@
             <source
               media="(min-width: 1440px)"
               srcset="img/svg/logo-desktop.svg"
+              type="image/svg+xml"
             />
+
             <source
               media="(min-width: 768px)"
               srcset="img/svg/logo-tablet.svg"
+              type="image/svg+xml"
             />
+
             <img
-              src="img/svg/logo-desktop.svg"
+              src="img/svg/logo-mobile.svg"
               alt="Белый кот в рыжей суперодежде"
+              width="200"
+              height="80"
+              loading="eager"
+              decoding="async"
             />
           </picture>
         </a>
@@ -34,15 +42,13 @@
           </button>
           <ul class="main-nav__list main-nav__list--index">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">Главная</a>
+              <a class="main-nav__link main-nav__link--active" href="#">
+                Главная
+              </a>
             </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html"
-                >Каталог продукции</a
-              >
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="">Подбор программы</a>
+              <a class="main-nav__link" href="#">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -54,7 +60,7 @@
         <div class="container promo__container">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <a class="promo__button button" href="">Подобрать программу</a>
+          <a class="promo__button button" href="catalog.html">Подобрать программу</a>
         </div>
       </section>
 
@@ -72,9 +78,7 @@
                 лазить по&nbsp;деревьям? Пора на&nbsp;диету! Cat Energy Slim
                 поможет вашему питомцу сбросить лишний вес.
               </p>
-              <a class="program__item-button" href="catalog.html"
-                >Каталог Slim</a
-              >
+              <a class="program__item-button" href="catalog.html">Каталог Slim</a>
             </li>
             <li class="program__item program__item--pro">
               <h3 class="program__item-title">
@@ -86,9 +90,7 @@
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые
                 мышцы!
               </p>
-              <a class="program__item-button" href="catalog.html"
-                >Каталог Pro</a
-              >
+              <a class="program__item-button" href="catalog.html">Каталог Pro</a>
             </li>
           </ul>
         </div>
@@ -137,29 +139,28 @@
               по 16 часов в день.
             </p>
 
-            <div class="example__statistics">
-              <div class="example__progress-list">
-                <div class="example__progress">
-                  <span
-                    class="example__progress-result example__progress-result--block-1"
-                    >5 кг</span
-                  >
-                  <span
-                    class="example__progress-text example__progress-text--block-1"
-                    >Снижение веса</span
-                  >
-                </div>
-                <div class="example__progress">
-                  <span
-                    class="example__progress-result example__progress-result--block-2"
-                    >60 дней</span
-                  >
-                  <span
-                    class="example__progress-text example__progress-text--block-2"
-                    >Затрачено времени</span
-                  >
-                </div>
-              </div>
+           <div class="example__statistics">
+  <div class="example__progress-list">
+    <div class="example__progress">
+      <span class="example__progress-result example__progress-result--block-1">
+        5 кг
+      </span>
+      <span class="example__progress-text example__progress-text--block-1">
+        Снижение веса
+      </span>
+    </div>
+
+    <div class="example__progress">
+      <span class="example__progress-result example__progress-result--block-2">
+        60 дней
+      </span>
+      <span class="example__progress-text example__progress-text--block-2">
+        Затрачено времени
+      </span>
+    </div>
+  </div>
+</div>
+
               <p class="example__price-text">
                 Затраты на питание:
                 <span class="example__price-value">15 000 руб.</span>
@@ -236,7 +237,12 @@
             aria-label="Черные буквы Cat Energy"
           >
             <span class="visually-hidden">Логотип Cat Energy</span>
-            <img src="" alt="" />
+            <img
+              src="img/svg/logo-footer.svg"
+              width="100"
+              height="44"
+              alt="CAT ENERGY"
+            />
           </a>
 
           <div class="page-footer__social social">
@@ -249,31 +255,55 @@
                   aria-label="логотип VK"
                 >
                   <span class="visually-hidden">Вконтакте</span>
-                  <img src="" alt="" />
+                  <img
+                    src="img/svg/vk-icon.svg"
+                    width="24"
+                    height="24"
+                    alt="VK"
+                  />
                 </a>
               </li>
               <li class="social__item">
                 <a
                   class="social__link"
-                  href="https://www.instagram.com/htmlacademy/"
+                  href="https://www.youtube.com/htmlacademy"
                   aria-label="логотип Youtube"
                 >
                   <span class="visually-hidden">Ютуб</span>
-                  <img src="" alt="" />
+                  <img
+                    src="img/svg/youtube-icon.svg"
+                    width="24"
+                    height="24"
+                    alt="YouTube"
+                  />
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="" aria-label="логотип telegram">
+                <a
+                  class="social__link"
+                  href="https://t.me/htmlacademy"
+                  aria-label="логотип telegram"
+                >
                   <span class="visually-hidden">Телеграм</span>
-                  <img src="" alt="" />
+                  <img
+                    src="img/svg/tg-icon.svg"
+                    width="24"
+                    height="24"
+                    alt="Telegram"
+                  />
                 </a>
               </li>
             </ul>
           </div>
 
-          <a class="page-footer__copyright" href="">
+          <a class="page-footer__copyright" href="https://htmlacademy.ru">
             <span class="page-footer__copyright-name">HTML Academy</span>
-            <img src="" alt="" />
+            <img
+              src="img/svg/htmlacademy-icon.svg"
+              width="27"
+              height="35"
+              alt="HTML Academy"
+            />
           </a>
         </div>
       </section>

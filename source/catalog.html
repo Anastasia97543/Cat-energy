@@ -2,53 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог продукции — CAT ENERGY</title>
-    <link
-      rel="stylesheet"
-      href="catalog-style.css"
-    />
+    <link rel="stylesheet" href="catalog-style.css" />
   </head>
 
   <body class="page page--catalog">
     <header class="header">
       <div class="header__container">
-        <a
-          href="index.html"
-          class="logo header__logo"
-        >
+        <a class="logo header__logo" href="index.html">
           <img
-            src="img/logo.png"
-            alt="CAT ENERGY"
             class="logo__image"
+            src="img/logo.png"
+            width="174"
+            height="76"
+            alt="CAT ENERGY"
           />
           <span class="logo__text">CAT ENERGY</span>
         </a>
 
-        <nav
-          class="nav header__nav"
-          aria-label="Основная навигация"
-        >
+        <nav class="nav header__nav" aria-label="Основная навигация">
           <ul class="nav__list">
             <li class="nav__item">
-              <a
-                href="index.html"
-                class="nav__link"
-                >Главная</a
-              >
+              <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
               <span class="nav__link nav__link--active">Каталог продукции</span>
             </li>
             <li class="nav__item">
-              <a
-                href="program.html"
-                class="nav__link"
-                >Подбор программы</a
-              >
+              <a class="nav__link" href="program.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -62,12 +44,11 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <article class="product-card">
-              <a
-                href="#"
-                class="product-card__image-link"
-              >
+              <a class="product-card__image-link" href="#">
                 <img
-                  src=""
+                  src="img/products/product-1.png"
+                  width="132"
+                  height="152"
                   alt="CAT ENERGY PRO 500 г"
                 />
               </a>
@@ -85,18 +66,17 @@
                 </div>
               </dl>
 
-              <button class="button product-card__button">Заказать</button>
+              <button class="button product-card__button" type="button">Заказать</button>
             </article>
           </li>
 
           <li class="catalog__item">
             <article class="product-card">
-              <a
-                href="#"
-                class="product-card__image-link"
-              >
+              <a class="product-card__image-link" href="#">
                 <img
-                  src=""
+                  src="img/products/product-2.png"
+                  width="132"
+                  height="152"
                   alt="CAT ENERGY PRO 1000 г"
                 />
               </a>
@@ -114,14 +94,16 @@
                 </div>
               </dl>
 
-              <button class="button product-card__button">Заказать</button>
+              <button class="button product-card__button" type="button">Заказать</button>
             </article>
           </li>
 
           <li class="catalog__item catalog__item--more">
             <article class="product-card product-card--more">
               <h2 class="product-card__title">Показать ещё 100 товаров</h2>
-              <button class="button button--secondary">Показать всё</button>
+              <button class="button button--secondary" type="button">
+                Показать всё
+              </button>
             </article>
           </li>
         </ul>
@@ -135,27 +117,27 @@
             <h3 class="additional-products__name">Сахарозаменитель</h3>
             <span class="additional-products__amount">1 шт.</span>
             <span class="additional-products__price">250 ₽</span>
-            <button class="button">Заказать</button>
+            <button class="button" type="button">Заказать</button>
           </li>
 
           <li class="additional-products__item">
             <h3 class="additional-products__name">Питьевая вода</h3>
             <span class="additional-products__amount">5 шт.</span>
             <span class="additional-products__price">500 ₽</span>
-            <button class="button">Заказать</button>
+            <button class="button" type="button">Заказать</button>
           </li>
           <li class="additional-products__item">
             <h3 class="additional-products__name">Молоко</h3>
             <span class="additional-products__amount">5 шт.</span>
             <span class="additional-products__price">500 ₽</span>
-            <button class="button">Заказать</button>
+            <button class="button" type="button">Заказать</button>азать</button>
           </li>
 
           <li class="additional-products__item">
             <h3 class="additional-products__name">Витамины</h3>
             <span class="additional-products__amount">5 шт.</span>
             <span class="additional-products__price">500 ₽</span>
-            <button class="button">Заказать</button>
+            <button class="button" type="button">Заказать</button>
           </li>
         </ul>
       </section>
@@ -168,11 +150,7 @@
           Подпишитесь на наши новости и не пропустите ни одного предложения!
         </p>
 
-        <form
-          class="newsletter__form"
-          action="#"
-          method="post"
-        >
+        <form class="newsletter__form" action="#" method="post">
           <label class="newsletter__label">
             <span class="visually-hidden">Email</span>
             <input
@@ -184,10 +162,7 @@
             />
           </label>
 
-          <button
-            class="newsletter__button button"
-            type="submit"
-          >
+          <button class="button newsletter__button" type="submit">
             Подписаться
           </button>
         </form>
@@ -196,41 +171,23 @@
 
     <footer class="footer footer--catalog">
       <div class="footer__container">
-        <a
-          href=""
-          class="logo footer__logo"
-        >
-          <img
-            src=""
-            alt="CAT ENERGY"
-          />
+        <a class="logo footer__logo" href="index.html">
+          <img src="img/logo.png" width="174" height="76" alt="CAT ENERGY" />
         </a>
 
         <ul class="social footer__social">
           <li>
-            <a
-              href="#"
-              aria-label="ВКонтакте"
-              >VK</a
-            >
+            <a href="#" aria-label="ВКонтакте">VK</a>
           </li>
           <li>
-            <a
-              href="#"
-              aria-label="youtube"
-              >Youtube</a
-            >
+            <a href="#" aria-label="youtube">Youtube</a>
           </li>
           <li>
-            <a
-              href="#"
-              aria-label="telegram"
-              >Telegram</a
-            >
+            <a href="#" aria-label="telegram">Telegram</a>
           </li>
         </ul>
 
-        <a href="https://htmlacademy.ru"> HTML Academy </a>
+        <a href="https://htmlacademy.ru">HTML Academy</a>
       </div>
     </footer>
   </body>

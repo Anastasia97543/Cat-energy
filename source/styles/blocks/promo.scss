@@ -3,12 +3,14 @@
   padding-left: 80px;
   padding-bottom: 266px;
 }
+
 .promo__title {
   @include font-oswald(60px, $font-weight-medium, $black);
   margin: 0;
   padding-bottom: 30px;
   line-height: 60px;
 }
+
 .promo__text {
   @include font-oswald(20px, $font-weight-normal, $black);
   margin: 0;

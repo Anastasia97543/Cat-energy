@@ -4,17 +4,20 @@
   font-weight: $weight;
   color: $color;
 }
+
 @mixin font-oswald($size: 16px, $weight: $font-weight-normal, $color: $black) {
   font-family: $oswald;
   font-size: $size;
   font-weight: $weight;
   color: $color;
 }
+
 @mixin reset-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 @mixin flex-center {
   display: flex;
   align-items: center;
