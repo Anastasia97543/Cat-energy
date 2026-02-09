@@ -1,0 +1,27 @@
+{
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[css]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[scss]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[json]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "editor.rulers": [80, 120]
+}

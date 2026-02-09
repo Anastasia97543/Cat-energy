@@ -1,3 +1,12 @@
+// Шрифты (после @font-face в fonts.scss)
+$oswald: "Oswald", sans-serif;
+$lato: "Lato", "Arial", sans-serif;
+
+// Начертания
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
 // Colors
 $white: #ffffff;
 $black: #000000;
@@ -13,12 +22,6 @@ $dark-gray: #444444;
 $green: #68b738;
 $dark-green: #5eaa2f;
 $red: #ff8282;
-
-// Fonts
-$oswald: "Oswald", "Arial", sans-serif;
-$lato: "Lato", sans-serif;
-$font-weight-normal: 400;
-$font-weight-medium: 500;
 
 // Gradients
 $gradient: linear-gradient(

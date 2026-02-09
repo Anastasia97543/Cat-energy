@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Oswald";
+  src: url("/source/fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("/source/fonts/Lato-Regular.woff2") format("woff2"), url("/source/fonts/lato/Lato-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+/* здесь используйте глобальные селекторы img, body, html и так далее */
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #444444;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+}
+
+.page-header--index {
+  position: relative;
+}
+.page-header--index::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 50%;
+  z-index: -1;
+  height: 694px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("/img/raster/index-background-desktop-cat@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 19px;
+  padding-bottom: 20px;
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 75px;
+  box-sizing: content-box;
+}
+
+.main-nav {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+.main-nav__list .main-nav__item {
+  margin-left: 36px;
+  padding-bottom: 10px;
+}
+.main-nav__list:first-child {
+  margin-left: 0;
+}
+
+.main-nav__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 100%;
+  line-height: 30px;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.promo__container {
+  padding-top: 110px;
+  padding-left: 80px;
+  padding-bottom: 266px;
+}
+
+.promo__title {
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.promo__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.advantages__container {
+  margin-bottom: 42px;
+}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 38px;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  column-gap: 70px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.example__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0 110px;
+  max-width: 1440px;
+}
