@@ -54,8 +54,11 @@ export function processStyles() {
       postcss([
         postUrl([
           {
-            filter: "**/*",
-            assetsPath: "../",
+            filter: "**/*.css",
+            url: "copy", // Копирует файлы по URL
+            assetsPath: "../", // Базовый путь для ассетов
+            useHash: false,
+            basePath: PATH_TO_SOURCE // Указываем базовый путь
           },
           {
             filter: "**/icons/**/*.svg",
@@ -206,7 +209,13 @@ export function buildProd(done) {
 export function runDev(done) {
   series(
     removeBuild,
-    parallel(processMarkup, processStyles, processScripts, createStack),
+    parallel(
+      processMarkup,
+      processStyles, 
+      processScripts,
+      createStack,
+      copyStatic  //  ЭТО!
+    ),
     startServer,
   )(done);
 }

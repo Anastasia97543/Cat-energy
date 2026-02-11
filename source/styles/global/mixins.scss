@@ -29,3 +29,42 @@
   display: flex;
   align-items: center;
 }
+@mixin catalog-container {
+  min-width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    max-width: 1440px;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: 2dppx) {
+    @content;
+  }
+}
+@mixin max-width-mobile {
+  @media (max-width: $mobile-width-only) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
