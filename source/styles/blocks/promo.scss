@@ -11,7 +11,7 @@ $gradient: linear-gradient(to top, $white 178px, rgba(104, 183, 56, 0.85) 178px)
   padding-bottom: 90px;// Нужен ли он????
 
   @include tablet {
-    position: relative; // для promo__image
+    position: relative; 
     background: none;
   }
 }
