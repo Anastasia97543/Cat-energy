@@ -1,15 +1,18 @@
 // Блок навигации внутри header
 .main-nav {
+  display: none;
   position: relative;
   width: auto;
   margin: 0 -20px;
   background-color: $white;
 
   @include tablet {
+    display: block;
     margin: 0;
   }
 
   @include desktop {
+    display: block;
     background-color: transparent;
   }
 }
@@ -97,3 +100,29 @@
   opacity: 0.3;
 }
 
+.main-nav__link--active {
+  opacity: 1;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+
+  @include tablet {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 31px;
+      border-bottom: 2px solid $dark-green;
+    }
+  }
+
+  @include desktop {
+    &::before {
+      top: 36px;
+    }
+  }
+}

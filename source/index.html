@@ -7,51 +7,35 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body class="page-body">
-    <header class="page-header page-header--index">
-      <div class="container page-header__container">
-        <h1 class="visually-hidden">
-          Cat Energy - диетическое питание для кошек
-        </h1>
-        <a class="logo page-header__logo" href="#">
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="img/svg/logo-desktop.svg"
-              type="image/svg+xml"
-            />
-
-            <source
-              media="(min-width: 768px)"
-              srcset="img/svg/logo-tablet.svg"
-              type="image/svg+xml"
-            />
-
-            <img
-              src="img/svg/logo-mobile.svg"
-              alt="Белый кот в рыжей суперодежде"
-              width="200"
-              height="80"
-            />
-          </picture>
-        </a>
-        <nav class="main-nav">
-          <button type="button">
-            <span class="visually-hidden">Открыть/Закрыть меню</span>
-          </button>
-          <ul class="main-nav__list main-nav__list--index">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+     <header class="page-header page-header--index">
+    <div class="container page-header__container">
+      <h1 class="visually-hidden">Cat Energy - диетическое питание для кошек</h1>
+      <a class="logo page-header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+          <img src="img/svg/logo-mobile.svg" width="34" height="38" alt="Белый кот в рыжей суперодежде и маске">
+        </picture>
+      </a>
+      <nav class="main-nav"> 
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/Закрыть меню</span>
+        </button>
+        <img src="/img/svg/burger-menu.svg" alt="">
+        <ul class="main-nav__list main-nav__list--index">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <main class="page-main">
       <section class="promo">
@@ -60,7 +44,7 @@
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/raster/index-can-desktop@1x.png 1x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/raster/index-can-tablet@1x.png 1x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/raster/index-can-tablet@1x.jpg 1x">
             <source type="image/webp" srcset="img/raster/index-can-mobile@1x.png 1x">
 
             <source media="(min-width: 1440px)" srcset="img/raster/index-can-desktop@1x.png 1x">
