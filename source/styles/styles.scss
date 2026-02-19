@@ -1,15 +1,25 @@
-@import "./common/variables.scss";
-@import "./common/global.scss";
+// Шрифты
 @import "./common/fonts.scss";
-/* GLOBAL */
-@import "./global/mixins.scss";
 
+// Переменные
+@import "./common/variables.scss";
+
+//Кнопка
 @import "./common/button.scss";
 
-/* BLOCKS */
+// Базовые параметры страницы
+@import "./global/global.scss";
+
+// Миксины (примеси)
+@import "./global/mixins.scss";
+
+// Главная страница
 @import "./blocks/header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/promo.scss";
+@import "./blocks/program.scss";
 @import "./blocks/examples.scss";
 @import "./blocks/advantages.scss";
-@import "./blocks/program.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";

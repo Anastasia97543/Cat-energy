@@ -1,31 +1,157 @@
+// Блок навигации внутри header
 .main-nav {
-  position: relative;
+  /* Навигация без JS: на мобильных список скрыт, показана иконка бургера. */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
   width: auto;
-  margin: 0 auto;
+  margin: 0;
+  background-color: $white;
+
+  @include tablet {
+    position: relative;
+    width: auto;
+    margin: 0;
+  }
+
+  @include desktop {
+    background-color: transparent;
+  }
 }
+
+.main-nav__toggle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
 .main-nav__list {
   @include reset-list;
   padding-top: 5px;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  width: 1200px;
-  .main-nav__item {
-    margin-left: 36px;
-    padding-bottom: 10px;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 510px;
+    padding-top: 16px;
+
+    .main-nav__item {
+      margin-left: 36px;
+      padding-bottom: 10px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
-  &:first-child {
-    margin-left: 0;
+
+  @include desktop {
+    padding-top: 10px;
+    width: 610px;
   }
 }
+
+@include desktop {
+  .main-nav__list--index a {
+    color: $white;
+  }
+
+  .main-nav__list--index .main-nav__link--active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 35px;
+    border-bottom: 2px solid $white;
+  }
+}
+
+.main-nav__item {
+  position: relative;
+  border-top: 1px solid $extra-gray;
+  text-align: center;
+
+  @include tablet {
+    border: none;
+  }
+}
+
 .main-nav__link {
-  @include font-oswald(20px, $font-weight-normal, $white);
+  font-weight: $font-weight-medium;
   width: 100%;
-  line-height: 100%;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 20px;
   padding-top: 22px;
   padding-bottom: 23px;
   background-color: transparent;
-  text-transform: uppercase;
-  text-decoration: none;
+
+  @include tablet {
+    font-weight: $font-weight-normal;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+  opacity: 0.6;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
+}
+
+.main-nav__link--active {
+  opacity: 1;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+
+  @include tablet {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 31px;
+      border-bottom: 2px solid $dark-green;
+    }
+  }
+
+  @include desktop {
+    &::before {
+      top: 36px;
+    }
+  }
 }

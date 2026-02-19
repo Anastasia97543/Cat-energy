@@ -1,13 +1,87 @@
-.example__wrapper {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  padding: 0 110px;
-  max-width: 1440px;
+.example {
+  background-color: $example-gray;
+  overflow: hidden;
 }
-// .example__title {
-//   font-size: 36px;
-//   line-height: 60px;
-//   padding-top: 60px;
-//   margin-bottom: 86px;
+
+// .example__wrapper {
 // }
+
+.example__container {
+  padding-top: 27px; //  заголовок
+}
+
+.example__title {
+  @include caption;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 33px;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: $arial;
+}
+
+// .example__statistics {
+// }
+
+.example__progress-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__progress {
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border-radius: 3px;
+  border: 1px solid $light-gray;
+  box-sizing: border-box;
+  margin-bottom: 34px;
+}
+
+.example__progress-result {
+  position: absolute;
+  top: 14px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.example__progress-result--block-1 {
+  left: 42px;
+}
+
+.example__progress-result--block-2 {
+  left: 20px;
+}
+
+.example__progress-text {
+  position: absolute;
+  left: 19px;
+  top: 47px;
+  width: 80px;
+  padding-right: 6px;
+  padding-left: 7px;
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: $example-gray;
+}
+
+.example__price-text {
+  margin: 0;
+  margin-bottom: 42px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.example__slider {
+  padding-bottom: 32px;
+}
