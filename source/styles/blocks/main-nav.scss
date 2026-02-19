@@ -1,25 +1,54 @@
 // Блок навигации внутри header
 .main-nav {
-  display: none;
-  position: relative;
+  /* Навигация без JS: на мобильных список скрыт, показана иконка бургера. */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
   width: auto;
-  margin: 0 -20px;
+  margin: 0;
   background-color: $white;
 
   @include tablet {
-    display: block;
+    position: relative;
+    width: auto;
     margin: 0;
   }
 
   @include desktop {
-    display: block;
     background-color: transparent;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 
 .main-nav__list {
   @include reset-list;
   padding-top: 5px;
+  display: none;
 
   @include tablet {
     display: flex;

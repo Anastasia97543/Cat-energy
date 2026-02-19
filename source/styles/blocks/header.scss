@@ -1,3 +1,5 @@
+$gradient: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%);
+
 @include desktop {
   .page-header--index {
     position: relative;
@@ -27,11 +29,15 @@
 }
 
 .page-header__container {
+  /* Контейнер хедера — делаем позиционированным, чтобы абсолютные
+     элементы внутри (например, `.main-nav`) могли опираться на него. */
+  position: relative;
+
   @include tablet {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 19px;
+    padding-top: 19px; // отступ от блока page-header наверх
     padding-bottom: 20px;
   }
 
@@ -41,13 +47,21 @@
 }
 
 .page-header__logo {
-  @include flex-center; // уже включает flex
   position: relative;
-  box-sizing: content-box;
-
+  display: flex;
+  align-items: center;
   height: 45px;
   padding-top: 10px;
   padding-bottom: 5px;
+  box-sizing: content-box;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @include tablet {
     padding-bottom: 10px;
@@ -58,6 +72,10 @@
   margin: auto;
   position: absolute;
   inset: 5px 0 0;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .page-header__logo img {

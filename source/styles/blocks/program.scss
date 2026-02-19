@@ -20,13 +20,12 @@
 }
 
 .program__item {
-  min-width: 280px;
   position: relative;
   background-color: $gray;
-  padding-top: 30px;
+  padding-top: 30px; // отступ для заголовков
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; // отступ между элементами
 
   &:last-child {
     margin-bottom: 0;
@@ -52,7 +51,6 @@
 
 @include tablet {
   .program__item {
-    width: 708px;
     margin-bottom: 30px;
     padding: 78px 27px 41px 52px;
 
@@ -205,6 +203,7 @@
   }
 }
 
+
 .program__item-text {
   position: relative;
   font-family: $arial;
@@ -256,4 +255,8 @@
       right: -50px;
     }
   }
+}
+
+.program__item-button:active {
+  opacity: 0.3;
 }
